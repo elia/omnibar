@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>Author</key>
-	<string>Alexey Efimov</string>
+	<string>Elia Schito, Alexey Efimov</string>
 	<key>Builder Version</key>
-	<string>6534.51.22</string>
+	<string>7534.55.3</string>
 	<key>CFBundleDisplayName</key>
 	<string>OmniBar</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.github.aefimov.omnibar</string>
+	<string>com.github.eliae-societas.omnibar</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
@@ -36,13 +36,15 @@
 	<dict>
 		<key>Website Access</key>
 		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
 			<key>Level</key>
 			<string>All</string>
 		</dict>
 	</dict>
 	<key>Update Manifest URL</key>
-	<string>https://raw.github.com/aefimov/omnibar/master/OmniBar.safariextension/Update.plist</string>
+	<string>https://raw.github.com/elia/omnibar/master/OmniBar.safariextension/Update.plist</string>
 	<key>Website</key>
-	<string>https://github.com/aefimov/omnibar</string>
+	<string>https://github.com/elia/omnibar</string>
 </dict>
 </plist>
