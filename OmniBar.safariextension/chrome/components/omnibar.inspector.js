@@ -21,10 +21,10 @@ Omnibar.Inspector = new function () {
 
     // Those rules detect URLs
     this.excludeRules = function (text) {
-        return text.match(/^[a-z]+$/) || // This is short domain name in lowercase, do not search it
-                text.match(/^[^\s]+:\d+$/) || // This is domain name with port specified, do not search it
-                text.match(/\d+\.\d+\.\d+\.\d+(?::\d+)?$/) || // This is IP address, do not search it
-                text.match(/^[^:]+:[^@]+@/) || // This is username and password specified in url, do not search it
+        // return text.match(/^[a-z]+$/) || // This is short domain name in lowercase, do not search it
+        return text.match(/^[^\s]+:\d+$/) || // This is domain name with port specified, do not search it
+               text.match(/\d+\.\d+\.\d+\.\d+(?::\d+)?$/) || // This is IP address, do not search it
+               text.match(/^[^:]+:[^@]+@/) || // This is username and password specified in url, do not search it
                 text.match(/\.[^\s\d\.,<>!@~`#\$%\^&\*\(\)\-_\+=\{\}\[\]\|\\\/;:"']{2,}$/); // This is valid domain suffix, do not search it
     };
 
